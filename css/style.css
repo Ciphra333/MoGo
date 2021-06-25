@@ -223,6 +223,14 @@ z-index: 1;
     background-color: #f8f8f8;
 }
 
+.section--clients {
+    background: #f5f5f5
+    url(../images/images/fon_mountain.jpg)
+    center no-repeat;
+    background-size: cover;
+}
+
+
 .section_header {
     width: 100%;
     max-width: 950px;
@@ -722,4 +730,56 @@ opacity: .1;
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+/* Clients */
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.clients_item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.clients_photo {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.clients_name {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+.clients_prof {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+.clients_text {
+    font-size: 15px;
+    color: #999999;
+}
+.clients_text::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px 0;
+
+    background-color: #f38181;
 }

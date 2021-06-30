@@ -783,3 +783,39 @@ opacity: .1;
 
     background-color: #f38181;
 }
+
+/* Blog */
+.blog {
+    display: flex;
+
+}
+
+.blog_item {
+    width: 30%;
+}
+.blog_header {
+    position: relative;
+}
+.blog_photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.blog_date {
+   background-color: #95e1d3;
+
+
+   color: #fff;
+
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+
+}
+
+.blog_date_day {
+    font-size: 30px;
+    font-weight: 700;
+    
+}

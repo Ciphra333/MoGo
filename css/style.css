@@ -415,8 +415,13 @@ flex-wrap:wrap;
     width: 33.3333%;
     padding-left: 85px;
     padding-right: 20px;
+    padding: 0 35px 40px 85px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.service_item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services_icon {
@@ -452,6 +457,8 @@ position: relative;
 
 .devices_item {
     display: block;
+    max-width: 100%;
+    height: auto;
     
 
 }
@@ -467,11 +474,19 @@ position: relative;
 
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 
 }
 
 .wedo-item {
     width: 50%;
+    padding: 0 15px;
+}
+.wedo_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Accordion*/
@@ -1190,6 +1205,15 @@ opacity: .1;
         .stat_item:last-child {
             border-right: 0;
         }
+        /* Services */
+        .services_item {
+            width: 50%;
+            padding-bottom: 0;
+            border: none;
+        }
+        .services_item--border {
+            border-bottom: 0;
+        }
 }
 
 @media (max-width: 770px) {
@@ -1229,6 +1253,32 @@ opacity: .1;
     .slider_item.active:before {
         width: 50%;
     }
+
+    /* Services */
+    .services {
+        justify-content: center;
+    }
+
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+    .services_item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+    .services_icon {
+        left: 0;
+    }
+    /* Wedo */
+    .wedo_img {
+        display: none;
+    }
+    .wedo-item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1267,5 +1317,15 @@ opacity: .1;
     }
     .stat_count {
         font-size: 52px;
+    }
+    /* Devices */
+
+    .devices {
+        max-width: 320px;
+    }
+    .devices--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
     }
 }
